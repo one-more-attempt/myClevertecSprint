@@ -1,0 +1,29 @@
+.footer-wrapper {
+    height: 56px;
+    margin: 62px 165px 0 165px;
+    padding: 16px 0 16px 0;
+    display: flex;
+    flex: 0 0 auto;
+
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #BFC4C9;
+   
+    .copyright {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+
+        p {
+            display: inline;
+        }
+    }
+
+    .social-icons {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        gap: 24px;
+    }
+}

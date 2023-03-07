@@ -1,0 +1,245 @@
+.book-page-layout {
+    background: #FFFFFF;
+    flex: 1 0 auto;
+
+    .breadscrumbs {
+        height: 64px;
+        padding: 0 165px;
+        margin-top: 51px;
+        color: #A7A7A7;
+        background-color: #F9F9FA;
+        display: flex;
+        align-items: center;
+
+        svg {
+            width: 24px;
+        }
+
+        .book-category {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 18px;
+        }
+    }
+
+    .book-page-wrapper {
+        padding: 0 165px 0 165px;
+
+        .page-details {
+            margin-top: 42px;
+
+            .title-with-hr {
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 28px;
+                padding-bottom: 16px;
+                border-bottom: 1px solid #F9F9FA;
+                width: 350px;
+                display: flex;
+                align-items: center;
+            }
+
+
+            .basic-info {
+                margin-inline: auto;
+                display: grid;
+                grid-template-columns: 445px auto;
+                grid-template-rows: 0.5fr 0.3fr 0.3fr 1fr 1fr 0.5fr;
+                gap: 0px 30px;
+                grid-auto-flow: row;
+
+                grid-template-areas:
+                    'image title'
+                    'image author'
+                    'image button'
+                    'image description'
+                    'image description'
+                    'image description'
+                    '. description';
+
+                .book-image {
+                    grid-area: image;
+                    width: 445px;
+                    height: 593px;
+                    border: 1px solid #A7A7A7;
+                    border-radius: 10px;
+                    overflow: hidden;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    svg {
+                        width: 56px;
+                        height: 56px;
+                    }
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: fill;
+                    }
+                }
+
+                .book-name {
+                    font-weight: 700;
+                    font-size: 32px;
+                    line-height: 40px;
+                    grid-area: title;
+                }
+
+                .book-author-year {
+                    grid-area: author;
+                    margin-top: 24px;
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 28px;
+                    color: #A7A7A7
+                }
+
+                .status-bar {
+                    margin: 32px 0 0 0;
+                    width: 350px;
+                }
+
+                .book-about {
+                    margin-top: 62px;
+                    grid-area: description;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 24px;
+                    letter-spacing: 0.1px;
+                    color: #363636;
+
+
+                    .book-about-text {
+                        margin-top: 16px;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 24px;
+                    }
+                }
+            }
+
+            .more-info {
+                margin-top: 42px;
+
+                .rate-info {
+                    .rating {
+                        gap: 16px;
+
+                        .rating-num {
+                            margin-left: 10px;
+                            font-weight: 700;
+                            font-size: 18px;
+                            line-height: 28px;
+                            color: #363636
+                        }
+                    }
+
+
+                }
+
+                .detailed-info {
+                    margin-top: 62px;
+
+                    .details {
+                        margin-top: 16px;
+                        column-count: 2;
+                        // background: #fff2e1;
+
+                        .details-block {
+                            display: flex;
+
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 24px;
+
+
+                            .details-title {
+                                width: 50%;
+                                flex-shrink: 0;
+                                font-weight: 600;
+                                font-size: 16px;
+                                line-height: 24px;
+                                color: #A7A7A7;
+                            }
+                        }
+
+
+
+                    }
+                }
+
+                .all-comments {
+                    margin-top: 62px;
+
+                    .title-with-hr {
+                        margin-bottom: 16px
+                    }
+
+                    .comments-num {
+                        margin-left: 6px;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 24px;
+                        color: #A7A7A7;
+                    }
+
+                    .comment {
+                        margin-bottom: 42px;
+
+                        .user {
+                            display: flex;
+                            align-items: center;
+
+                            .user-avatar {
+
+                                width: 32px;
+                                height: 32px;
+                            }
+
+                            .user-info {
+                                display: flex;
+                                font-weight: 400;
+                                font-size: 16px;
+                                line-height: 24px;
+                                color: #727272;
+
+                                .name {
+                                    margin: 0 24px 0 24px;
+                                }
+
+                                .date {}
+
+
+                            }
+
+
+                        }
+
+                        .rating {
+                            gap: 16px;
+
+                        }
+
+                        .comment-text {
+                            margin-top: 16px;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 24px;
+                            color: #363636
+                        }
+                    }
+
+
+                }
+
+                .status-bar {
+                    width: 350px
+                }
+            }
+
+
+        }
+    }
+}

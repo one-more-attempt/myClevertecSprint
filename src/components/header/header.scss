@@ -1,0 +1,58 @@
+.header-wrapper {
+    margin: 32px 165px 0 165px;
+    display: flex;
+    align-items: center;
+}
+
+.header__logo {
+    width: 285px;
+    flex-shrink: 0;
+}
+
+.logo-full-image {
+    height: 40px;
+}
+
+.burger-menu {
+    display: none;
+}
+
+.header__menu {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 0.1px;
+    color: #363636;
+}
+
+.header-user {
+    display: flex;
+    align-items: center;
+
+}
+
+.user-name {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.1px;
+    color: #363636;
+    margin-right: 16px;
+}
+
+.user-logo {
+    // background-color: skyblue;
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    filter: drop-shadow(0px 2px 4px rgba(191, 196, 201, 0.2)) drop-shadow(0px 3px 4px rgba(191, 196, 201, 0.18)) drop-shadow(0px 1px 5px rgba(191, 196, 201, 0.24));
+}
+
+.avatar {}

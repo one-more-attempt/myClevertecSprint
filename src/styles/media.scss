@@ -1,0 +1,745 @@
+// tile-and-list-view media 768
+@media (max-width: 768px) {
+    .header-wrapper {
+        margin: 32px 64px 0 64px;
+
+        .header__logo {
+            display: none;
+        }
+
+        .burger-menu {
+            display: block;
+            height: 32px;
+            width: 32px;
+        }
+
+        .header__menu {
+            margin-left: 24px;
+
+            .header-user {
+                display: none;
+            }
+        }
+
+
+    }
+
+    .basic-layout {
+        width: 768px;
+
+        .main-page-wrapper {
+            padding: 0 64px 0 64px;
+
+            .content-wrapper {
+                margin: 54px 0 0 0;
+
+                .categories-menu-wrapper {
+                    display: none;
+                }
+
+                .books-view-wrapper {
+                    .books-navbar-wrapper {
+                        .find-sort-options {}
+                    }
+
+                    .book-items-wrapper {
+                        margin-top: 24px;
+                        grid-template-columns: 1fr 1fr 1fr;
+                        gap: 24px calc((100% - (190px*3))/2);
+                    }
+
+                    .book-items-wrapper-list {
+                        margin-top: 24px;
+
+                        .book-item-list {
+                            padding: 16px 24px 16px 16px;
+                            border-radius: 12px;
+
+                            .book-info {
+                                .book-name {
+                                    font-weight: 700;
+                                    font-size: 24px;
+                                    line-height: 30px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+
+            }
+
+        }
+
+        .find {
+            width: 285px !important;
+        }
+    }
+
+    .footer-wrapper {
+        height: 56px;
+        margin: 62px 64px 0 64px;
+    }
+}
+
+// tile-and-list-view media 320
+@media (max-width: 320px) {
+    .header-wrapper {
+        margin: 24px 16px 0 16px;
+
+        .burger-menu {
+            display: block;
+            height: 24px;
+            width: 24px;
+        }
+
+        .header__menu {
+            margin-left: 24px;
+
+            .header-title {
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 28px;
+            }
+        }
+
+
+    }
+
+    .basic-layout {
+        width: 320px;
+
+        .main-page-wrapper {
+            padding: 0 16px 0 16px;
+
+            .content-wrapper {
+                width: 100%;
+                margin: 32px 0 0 0;
+
+                .categories-menu-wrapper {
+                    display: none;
+                }
+
+                .books-view-wrapper {
+                    .find-input {
+                        display: none;
+                    }
+
+                    .sort-text {
+                        display: none;
+                    }
+
+                    .find,
+                    .sort {
+                        width: 32px !important;
+                        height: 32px !important;
+                        padding: 0 !important;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+                    .search-icon,
+                    .sort-icon {
+                        margin: 0 !important;
+                    }
+
+                    .tile-view,
+                    .list-view {
+                        width: 32px !important;
+                        height: 32px !important;
+
+                        svg {
+                            width: 16px;
+                            height: 16px;
+                        }
+                    }
+
+                    .book-items-wrapper {
+                        margin-top: 24px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 16px;
+
+                        .book-item {
+                            width: 100%;
+                            padding: 8px 16px 16px 16px;
+                            display: flex;
+
+                            .book-img {
+                                width: 174px;
+                                border: none !important;
+                                align-self: center;
+                            }
+
+                            .status-bar {
+                                margin: 28px 0 0 0;
+                            }
+                        }
+                    }
+
+                    .book-items-wrapper-list {
+                        margin-top: 19px;
+
+                        .book-item-list {
+                            padding: 16px 16px 16px 8px;
+
+                            .book-img {
+                                width: 70px;
+                                height: 100px;
+                            }
+
+                            .book-info {
+                                flex-wrap: wrap;
+                                margin-left: 8px;
+
+                                .book-name {
+                                    font-weight: 600;
+                                    font-size: 14px;
+                                    line-height: 18px;
+                                }
+
+                                .book-author-year {
+                                    font-weight: 400;
+                                    font-size: 12px;
+                                    line-height: 18px;
+                                    margin-top: 3px;
+                                }
+
+                                .rating-status-list {
+                                    margin-top: 3px;
+                                    flex-direction: column;
+                                    align-items: flex-start;
+                                    gap: 16px;
+
+                                    .rating {
+                                        gap: 8px;
+
+                                        svg {
+                                            width: 16px
+                                        }
+                                    }
+
+                                    .status-bar {
+                                        width: 100%;
+                                    }
+
+                                }
+                            }
+
+
+                        }
+                    }
+                }
+
+
+            }
+
+
+        }
+
+    }
+
+    .find {
+        width: 285px !important;
+    }
+
+    // .footer-wrapper {
+    //     // height: 100%;
+    //     margin: 62px 16px 8px 16px;
+    //     gap: 18px;
+    //     flex-direction: column;
+
+    //     .copyright {
+    //         display: flex;
+    //         flex-direction: column;
+    //     }
+    // }
+}
+
+
+// book-page 768
+@media (max-width: 768px) {
+    .basic-layout {
+        width: 768px;
+
+        .book-page-layout {
+            .breadscrumbs {
+                padding: 0 64px;
+
+                svg {
+                    height: 18px;
+                }
+
+                .book-category {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
+
+            .book-page-wrapper {
+                padding-inline: 64px;
+
+                .page-details {
+
+                    .title-with-hr {
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 24px;
+
+                        padding-bottom: 16px;
+                        border-bottom: 1px solid #F9F9FA;
+                        width: 350px;
+                        display: flex;
+                        align-items: center;
+                    }
+
+                    .basic-info {
+                        margin-inline: auto;
+                        display: grid;
+                        grid-template-columns: 136px auto;
+                        grid-template-rows: 0.3fr 0.2fr 0.3fr;
+                        gap: 0px 30px;
+                        grid-auto-flow: row;
+                        grid-template-areas:
+                            'image title'
+                            'image author'
+                            'image button'
+                            'description description'
+                            'description description';
+
+                        .book-image {
+                            grid-area: image;
+                            width: 136px;
+                            height: 198px;
+                            border: 1px solid #A7A7A7;
+                            border-radius: 10px;
+                            overflow: hidden;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            svg {
+                                width: 56px;
+                                height: 56px;
+                            }
+
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: fill;
+                            }
+                        }
+
+                        .book-name {
+                            font-weight: 700;
+                            font-size: 24px;
+                            line-height: 30px;
+                            grid-area: title;
+                        }
+
+                        .book-author-year {
+                            grid-area: author;
+                            margin-top: 32px;
+                            font-weight: 600;
+                            font-size: 14px;
+                            line-height: 18px;
+                            color: #A7A7A7
+                        }
+
+                        .status-bar {
+                            margin: 32px 0 0 0;
+                            width: 305px;
+                        }
+
+                        .book-about {
+                            margin-top: 48px;
+                            grid-area: description;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 24px;
+                            letter-spacing: 0.1px;
+                            color: #363636;
+
+
+                            .book-about-text {
+                                margin-top: 16px;
+                                font-weight: 400;
+                                font-size: 16px;
+                                line-height: 24px;
+                            }
+                        }
+                    }
+
+                    .more-info {
+                        margin-top: 42px;
+
+                        .rate-info {
+                            .rating {
+                                gap: 16px;
+
+                                .rating-num {
+                                    margin-left: 10px;
+                                    font-weight: 700;
+                                    font-size: 18px;
+                                    line-height: 28px;
+                                    color: #363636
+                                }
+                            }
+
+
+                        }
+
+                        .detailed-info {
+                            margin-top: 52px;
+
+                            .details {
+                                margin-top: 16px;
+                                column-count: 2;
+                                // background: #fff2e1;
+
+                                .details-block {
+                                    display: flex;
+
+                                    font-weight: 400;
+                                    font-size: 14px;
+                                    line-height: 24px;
+
+
+                                    .details-title {
+                                        width: 50%;
+                                        flex-shrink: 0;
+
+                                        font-weight: 600;
+                                        font-size: 14px;
+                                        line-height: 24px;
+                                        color: #A7A7A7;
+                                    }
+                                }
+
+
+
+                            }
+                        }
+
+                        .all-comments {
+                            margin-top: 62px;
+
+                            // .title-with-hr {
+                            //     margin-bottom: 16px
+                            // }
+
+                            .comments-num {
+                                margin-left: 6px;
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 24px;
+                                color: #A7A7A7;
+                            }
+
+                            .comment {
+                                margin-bottom: 52px;
+
+                                .user {
+                                    display: flex;
+                                    align-items: center;
+
+                                    .user-avatar {
+                                        width: 32px;
+                                        height: 32px;
+                                    }
+
+                                    .user-info {
+                                        display: flex;
+                                        font-weight: 400;
+                                        font-size: 16px;
+                                        line-height: 24px;
+                                        color: #727272;
+
+
+                                        .name {
+                                            margin: 0 24px 0 24px;
+                                        }
+
+                                        .date {}
+
+
+                                    }
+
+
+                                }
+
+                                .rating {
+                                    gap: 16px;
+
+                                }
+
+                                .comment-text {
+                                    margin-top: 16px;
+                                    font-weight: 400;
+                                    font-size: 16px;
+                                    line-height: 24px;
+                                    color: #363636
+                                }
+                            }
+
+
+                        }
+
+                        .status-bar {
+                            width: auto
+                        }
+                    }
+
+
+                }
+            }
+        }
+
+    }
+
+
+
+
+
+}
+
+@media (max-width: 320px) {
+    .basic-layout {
+        width: 320px;
+        margin: 0;
+        
+   
+
+        .book-page-layout {
+            width: 320px;
+            .breadscrumbs {
+                padding: 0 16px;
+                margin-top: 32px;
+
+                svg {
+                    height: 16px;
+                }
+
+                .book-category {
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 16px;
+                }
+            }
+
+            .book-page-wrapper {
+                padding-inline: 16px;
+
+                .page-details {
+
+                    .title-with-hr {
+                        font-weight: 700;
+                        font-size: 18px;
+                        line-height: 28px;
+
+                        padding-bottom: 16px;
+                        border-bottom: 1px solid #F9F9FA;
+                        width: 350px;
+                        display: flex;
+                        align-items: center;
+                    }
+
+                    .basic-info {
+                        margin-inline: auto;
+                        display: flex;
+                        flex-direction: column;
+
+
+                        .book-image {
+                            width: 136px;
+                            height: 198px;
+                            border: 1px solid #A7A7A7;
+                            border-radius: 10px;
+                            overflow: hidden;
+                            align-self: center;
+
+                            svg {
+                                width: 56px;
+                                height: 56px;
+                            }
+
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: fill;
+                            }
+                        }
+
+                        .book-name {
+                            font-weight: 700;
+                            font-size: 18px;
+                            line-height: 28px;
+                            grid-area: title;
+                        }
+
+                        .book-author-year {
+                            grid-area: author;
+                            margin-top: 32px;
+                            font-weight: 400;
+                            font-size: 12px;
+                            line-height: 18px;
+                            color: #A7A7A7
+                        }
+
+                        .status-bar {
+                            margin: 42px 0 0 0;
+                            width: 100%;
+                        }
+
+                        .book-about {
+                            margin-top: 42px;
+                            grid-area: description;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 24px;
+                            letter-spacing: 0.1px;
+                            color: #363636;
+
+
+                            .book-about-text {
+                                margin-top: 16px;
+                                font-weight: 400;
+                                font-size: 12px;
+                                line-height: 18px;
+                            }
+                        }
+                    }
+
+                    .more-info {
+                        margin-top: 24px;
+
+                        .rate-info {
+                            .rating {
+                                margin-top: 8px;
+                                gap: 16px;
+
+                                .rating-num {
+                                    margin-left: 10px;
+                                    font-weight: 700;
+                                    font-size: 18px;
+                                    line-height: 28px;
+                                    color: #363636
+                                }
+                            }
+
+
+                        }
+
+                        .detailed-info {
+                            margin-top: 24px;
+
+                            .details {
+                                margin-top: 8px;
+                                column-count: 1;
+
+                                .details-block {
+                                    display: flex;
+                                    font-weight: 400;
+                                    font-size: 12px;
+                                    line-height: 24px;
+
+
+                                    .details-title {
+                                        width: 50%;
+                                        flex-shrink: 0;
+                                        font-weight: 600;
+                                        font-size: 12px;
+                                        line-height: 24px;
+                                        color: #A7A7A7;
+                                    }
+                                }
+
+
+
+                            }
+                        }
+
+                        .all-comments {
+                            margin-top: 62px;
+
+
+                            .comments-num {
+                                margin-left: 6px;
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 24px;
+                                color: #A7A7A7;
+                            }
+
+                            .comment {
+                                margin-bottom: 52px;
+
+                                .user {
+                                    display: flex;
+                                    align-items: center;
+
+                                    .user-avatar {
+                                        width: 32px;
+                                        height: 32px;
+                                    }
+
+                                    .user-info {
+                                        margin-left: 16px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: flex-start;
+                                        align-self: start;
+                                        font-weight: 400;
+                                        font-size: 15px;
+                                        line-height: 20px;
+                                        color: #727272;
+
+
+                                        .name {
+                                            margin: 0
+                                        }
+
+                                        .date {}
+
+
+                                    }
+
+
+                                }
+
+                                .rating {
+                                    gap: 16px;
+
+                                }
+
+                                .comment-text {
+                                    margin-top: 16px;
+                                    font-weight: 400;
+                                    font-size: 15px;
+                                    line-height: 20px;
+                                    color: #363636
+                                }
+                            }
+
+
+                        }
+
+                        .status-bar {
+
+                            margin: 0;
+                            width: auto
+                        }
+                    }
+
+
+                }
+            }
+        }
+
+    }
+
+
+
+
+
+}

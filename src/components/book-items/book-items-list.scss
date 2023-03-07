@@ -1,0 +1,89 @@
+.book-items-wrapper-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 32px;
+    
+
+    .book-item-list {
+        display: flex;
+        padding: 24px 16px 24px 16px;
+        box-shadow: 0px 2px 4px rgba(191, 196, 201, 0.2), 0px 3px 4px rgba(191, 196, 201, 0.18), 0px 1px 5px rgba(191, 196, 201, 0.24);
+        border-radius: 12px;
+
+        .book-img {
+            width: 120px;
+            height: 170px;
+
+            border: 1px solid #A7A7A7;
+            border-radius: 3px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+
+            img {
+                height: 100%;
+                width: 100%;
+            }
+
+            svg {
+                width: 32px;
+            }
+        }
+
+        .book-info {
+            margin-left: 16px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
+            .book-name {
+                font-weight: 700;
+                font-size: 22px;
+                line-height: 32px;
+            }
+
+            .book-author-year {
+                margin-top: 8px;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+            }
+
+            .rating-status-list {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                margin-top: 24px;
+
+                .rating {
+                    margin: 0px;
+                }
+
+                .status-bar {
+                    margin: 0px !important;
+                    width: 174px;
+
+                    span {
+                        margin: 5px;
+                    }
+
+                }
+            }
+
+        }
+
+
+    }
+
+}
+
+// <div className='book-name'>
+//           <span> {bookName}</span>
+//         </div>
+//         <div className='book-author-year'>
+//           <span className='book-author-list'>{bookAuthor}</span>, <span className='book-year-list'>{bookYear}</span>
+//         </div>

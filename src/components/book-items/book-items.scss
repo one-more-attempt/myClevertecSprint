@@ -1,0 +1,113 @@
+.book-items-wrapper {
+    margin-top: 32px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 24px calc((100% - (190px*4))/3);
+
+}
+
+.book-item {
+    width: 190px;
+    padding: 8px 8px 16px 8px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 2px 4px rgba(191, 196, 201, 0.2), 0px 3px 4px rgba(191, 196, 201, 0.18), 0px 1px 5px rgba(191, 196, 201, 0.24);
+    border-radius: 10px;
+    border: 1px solid #A7A7A7;
+
+    .book-img {
+        height: 242px;
+        width: 100%;
+        border: 1px solid #A7A7A7;
+        border-radius: 10px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            height: 100%
+        }
+    }
+
+    .book-name {
+        margin-top: 22px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 18px;
+        height: 54px;
+     
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
+
+
+    .book-author-year {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+     
+        height: 18px;
+        margin-top: 8px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        .book-author {}
+
+        .book-year {}
+    }
+
+  
+
+
+}
+
+.rating {
+    color: #A7A7A7;
+    height: 24px;
+    margin-top: 16px;
+    display: flex;
+    gap: 10px;
+    justify-content: left;
+    align-items: center;
+
+    svg {
+        color: #FFBC1F;
+    }
+}
+
+.status-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 28px 4px 0 4px;
+    height: 40px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.available {
+    background: linear-gradient(231.58deg, #F83600 -53.35%, #F9D423 297.76%);
+    color: white;
+}
+
+.ordered {
+    background: #FFFFFF;
+    border: 1px solid #BFC4C9;
+}
+
+.ordered-until {
+    background: #F9F9FA;
+    color: #A7A7A7;
+    border: 1px solid #BFC4C9;
+}
+
+.no-image {
+    background: #F9F9FA;
+}

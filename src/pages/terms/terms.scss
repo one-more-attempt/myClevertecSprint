@@ -1,0 +1,36 @@
+.terms-wrapper {
+    li:before {
+        counter-increment: li;
+        content: counters(li, ".") ". ";
+    }
+
+    ol {
+        counter-reset: li;
+
+        .firstlevel {
+            padding: 0;
+            margin-top: 32px;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            color: #363636;
+
+            li {
+                padding-inline-start: 30px;
+                margin: 10px;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+            }
+
+        }
+    }
+
+    .title-text {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 40px;
+        color: #363636;
+    }
+}
